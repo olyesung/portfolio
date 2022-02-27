@@ -55,7 +55,9 @@
   "devDependencies": {
     "@types/react-router-dom": "^5.3.3",
     "@types/styled-components": "^5.1.21",
-    "dotenv-webpack": "^7.1.0"
+    "dotenv-webpack": "^7.1.0",
+    "nth-check": ">=2.0.1",
+    "ansi-regex": ">=5.0.1"
   },
   "homepage": "https://github.com/olyesung/portfolio"
 }
