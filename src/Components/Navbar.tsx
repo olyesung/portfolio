@@ -21,10 +21,12 @@ const Column = styled.div`
   margin: 5vh 0;
 `;
 
-const Image = styled.img`
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
+const Image = styled.div`
+  width: 130px;
+  height: 130px;
+  border-radius: 65px;
+  background-image: url(https://pds.saramin.co.kr/person/photo/2018/09/pegxq8_b8vk-1ml1pbs_pegxq7g18a1ml1pbsB43C5E96CDFD4886A906F27C07CCAF9E.jpeg);
+  background-size: cover;
 `;
 
 const Items = styled.ul`
@@ -73,7 +75,7 @@ const Navbar = (bool: BoolProps["detail"]) => {
   return (
     <NavContainer style={{ overflow: "auto" }}>
       <Column>
-        <Image src="https://cdn.pixabay.com/photo/2021/01/26/09/48/york-minster-5950966__340.jpg" />
+        <Image />
         <Nav>
           <Items>
             <Item>
