@@ -25,7 +25,7 @@ function Experience() {
         <Grid_Each_Box>
           <Directional_Each_Title>
             <Deco_Stick />
-            2022~2023 동주 개발부 근무
+            2022.03~2023.10 동주 개발부 근무
           </Directional_Each_Title>
 
           <RowBox style={{ marginBottom: 10 }}>
@@ -110,6 +110,13 @@ function Experience() {
           <P_Tag>
             웹툰 캡쳐 방지 적용 / 인앱 결제 적용 / 작가 후원 기능 추가
           </P_Tag>
+
+          <RowBox>
+            <Deco_Cercle />
+            <P_Tag>
+              2023. 09 ~ 2023. 10 - 웹툰 작가 포트폴리오 웹 페이지 개발
+            </P_Tag>
+          </RowBox>
 
           <div style={{ marginTop: 20 }}>
             💬개발팀은 백엔드 개발자 1명, 프론트엔드 개발자(앱) 1명, 프론트엔드
