@@ -7,6 +7,7 @@ import Project from "../Components/Project";
 import Profile from "../Components/Profile";
 import Home from "../Components/Home";
 import Navbar from "../Components/Navbar";
+import Experience from "../Components/Experience";
 
 const Container = styled.div`
   height: 100vh;
@@ -58,6 +59,7 @@ export interface BoolProps {
   detail: {
     home: boolean;
     profile: boolean;
+    experience: boolean;
     project: boolean;
     contact: boolean;
   };
@@ -74,10 +76,12 @@ function RootHome() {
   const profileMatch = useMatch("/profile");
   const portfolioMatch = useMatch("/portfolio");
   const contactMatch = useMatch("/contact");
+  const experienceMatch = useMatch("/experience");
   const [height, setHeight] = useState<number | any>(0);
   const [bool, setBool] = useState<BoolProps["detail"]>({
     home: true,
     profile: false,
+    experience: false,
     project: false,
     contact: false,
   });
@@ -99,15 +103,17 @@ function RootHome() {
   // window.addEventListener("resize", handleResize);
 
   useEffect(() => {
-    for (let i = 1; i <= 5; i++) {
-      arr.push(i * (height / 4 / 2));
+    for (let i = 1; i <= 4; i++) {
+      arr.push(i * (height / 5 / 1.25));
     }
-    if (arr[4] !== 0) {
+    if (arr[3] !== 0) {
       scrollY.onChange(() => {
-        if (scrollY.get() >= arr[4]) {
+        if (scrollY.get() >= arr[3]) {
           setBool({ ...bool, contact: true, home: false });
         } else if (scrollY.get() >= arr[2]) {
           setBool({ ...bool, project: true, home: false });
+        } else if (scrollY.get() >= arr[1]) {
+          setBool({ ...bool, experience: true, home: false });
         } else if (scrollY.get() >= arr[0]) {
           setBool({ ...bool, profile: true, home: false });
         } else {
@@ -141,6 +147,9 @@ function RootHome() {
               <Box id="/profile">
                 <Profile />
               </Box>
+              <Box id="/experience">
+                <Experience />
+              </Box>
               <Box id="/project">
                 <Project />
               </Box>
@@ -156,6 +165,7 @@ function RootHome() {
       <div>
         <Routes>
           <Route path="/profile" element={<Outlet />} />
+          <Route path="/experience" element={<Outlet />} />
           <Route path="/project" element={<Outlet />} />
           <Route path="/contact" element={<Outlet />} />
         </Routes>

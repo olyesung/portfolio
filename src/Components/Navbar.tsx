@@ -91,6 +91,12 @@ const Navbar = (bool: BoolProps["detail"]) => {
               </NavLink>
             </Item>
             <Item>
+              <NavLink to="/experience">
+                Experience
+                {bool.experience && <Stick layoutId="stick" />}
+              </NavLink>
+            </Item>
+            <Item>
               <NavLink to="/project">
                 Project
                 {bool.project && <Stick layoutId="stick" />}
@@ -115,7 +121,7 @@ const Navbar = (bool: BoolProps["detail"]) => {
           />
         </Info>
         <Info>Yeseong Lee</Info>
-        <Info>010-7591-7015</Info>
+        <Info>010-7725-9641</Info>
         <Info>olyesung@gmail.com</Info>
       </ContactMe>
     </NavContainer>

@@ -1,70 +1,17 @@
-import React from "react";
-import styled from "styled-components";
-
-const Container = styled.div`
-  width: 100%;
-  height: 100%;
-  padding: 7vh 8vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  background-color: #e3e0f3;
-`;
-
-const Column = styled.div``;
-
-const AboutMe = styled.div`
-  font-size: 30px;
-  font-weight: 700;
-`;
-
-const Highlight_Color = styled.span`
-  font-weight: 800;
-  color: #345e94;
-`;
-const Intro_Grid_Template = styled.div`
-  display: grid;
-  grid-template-columns: 2fr 1.5fr;
-  gap: 40px;
-  margin: 5vh 0;
-`;
-
-const Grid_Each_Box = styled.div``;
-
-const Intro_Box = styled.div`
-  display: grid;
-  grid-template-rows: repeat(5, 1fr);
-  gap: 10px;
-`;
-
-const My_Directional = styled.div`
-  font-size: 28px;
-  font-weight: 700;
-  margin: 10vh 0 5vh 0;
-`;
-
-const Directional_Grid_Template = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-`;
-
-const Directional_Each_Title = styled.div`
-  font-size: 20px;
-  margin-bottom: 10px;
-  display: flex;
-`;
-
-const P_Tag = styled.p`
-  line-height: 1.5;
-`;
-
-const Deco_Stick = styled.div`
-  height: 22px;
-  width: 3px;
-  background-color: #345e94;
-  margin-right: 10px;
-`;
+import {
+  AboutMe,
+  Column,
+  Container,
+  Deco_Stick,
+  Directional_Each_Title,
+  Directional_Grid_Template,
+  Grid_Each_Box,
+  Highlight_Color,
+  Intro_Box,
+  Intro_Grid_Template,
+  My_Directional,
+  P_Tag,
+} from "./style";
 
 function Profile() {
   return (
@@ -91,7 +38,7 @@ function Profile() {
                 <Highlight_Color>Name</Highlight_Color> 이예성 (Yeseong, Lee)
               </div>
               <div>
-                <Highlight_Color>Age</Highlight_Color> 30
+                <Highlight_Color>Age</Highlight_Color> 32
               </div>
               <div>
                 <Highlight_Color>Address</Highlight_Color> Gangdonggu, Seoul
@@ -100,7 +47,7 @@ function Profile() {
                 <Highlight_Color>E-mail</Highlight_Color> olyesung@gmail.com
               </div>
               <div>
-                <Highlight_Color>Phone</Highlight_Color> +82 10 7591 7015
+                <Highlight_Color>Phone</Highlight_Color> +82 10 7725 9641
               </div>
             </Intro_Box>
           </Grid_Each_Box>
