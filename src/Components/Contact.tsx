@@ -1,6 +1,7 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import styled from "styled-components";
 import emailjs from "@emailjs/browser";
+import { Column } from "./style";
 
 const Container = styled.div`
   width: 100%;
@@ -11,8 +12,6 @@ const Container = styled.div`
   background-color: #334b48;
   color: white;
 `;
-
-const Column = styled.div``;
 
 const Contact_Me = styled.div`
   font-size: 35px;

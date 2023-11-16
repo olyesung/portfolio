@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Link, Outlet, Route, Routes, useMatch } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { Outlet, Route, Routes, useMatch } from "react-router-dom";
 import styled from "styled-components";
 import { motion, useElementScroll } from "framer-motion";
 import Contact from "../Components/Contact";
@@ -23,15 +23,6 @@ const Viewport = styled.div`
   background-color: black;
 `;
 
-const ColumnBox = styled.div`
-  height: 80vh;
-  width: 80vw;
-  background-color: tomato;
-  border-radius: 2vw;
-  margin-left: 4vw;
-  display: flex;
-`;
-
 const Slider = styled.div`
   position: relative;
 `;
@@ -43,17 +34,6 @@ const Grid = styled(motion.div)`
 `;
 
 const Box = styled(motion.div)``;
-
-const navVariants = {
-  top: {
-    backgroundColor: "rgba(0, 0, 0, 0)",
-    color: "black",
-  },
-  scroll: {
-    backgroundColor: "rgba(0, 0, 0, 1)",
-    color: "white",
-  },
-};
 
 export interface BoolProps {
   detail: {
@@ -69,14 +49,6 @@ function RootHome() {
   const [load, setLoad] = useState<any | null>(0);
   const pathName = window.location.pathname;
   const locateMatch = useMatch(pathName);
-  const [number, setNumber] = useState<any | null>([]);
-
-  const [viewEvent, setEvent] = useState<number | any>(0);
-  const homeMatch = useMatch("/");
-  const profileMatch = useMatch("/profile");
-  const portfolioMatch = useMatch("/portfolio");
-  const contactMatch = useMatch("/contact");
-  const experienceMatch = useMatch("/experience");
   const [height, setHeight] = useState<number | any>(0);
   const [bool, setBool] = useState<BoolProps["detail"]>({
     home: true,
@@ -94,13 +66,6 @@ function RootHome() {
     const viewHeight = ref.current?.scrollHeight;
     setHeight(() => viewHeight);
   }, [ref]);
-
-  // function handleResize() {
-  //   let hframe = window.innerHeight;
-  //   setEvent(() => hframe);
-  // }
-  // // console.log(viewEvent);
-  // window.addEventListener("resize", handleResize);
 
   useEffect(() => {
     for (let i = 1; i <= 4; i++) {

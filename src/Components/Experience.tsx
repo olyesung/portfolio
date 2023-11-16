@@ -1,12 +1,9 @@
-import React from "react";
-import styled from "styled-components";
 import {
   Column,
   Container,
   Deco_Cercle,
   Deco_Stick,
   Directional_Each_Title,
-  Directional_Grid_Template,
   Grid_Each_Box,
   Highlight_Color,
   My_Experience,

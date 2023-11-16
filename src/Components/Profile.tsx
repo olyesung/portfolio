@@ -23,13 +23,14 @@ function Profile() {
         <Intro_Grid_Template>
           <Grid_Each_Box>
             <P_Tag>
-              안녕하세요, 코딩하는 것이 즐겁고 배울 때 살아있음을 느끼는 행복한
-              개발자입니다. <br></br>
-              지금보다 더 나은 결과를 가져올 수 있도록 다양한 것들을 많이 접하고
-              있으며,
+              안녕하세요. 개발 경력 2년 차가 되어가는 주니어 개발자입니다.
               <br></br>
-              매일 조금씩이라도 꾸준히 발전하는 제 자신을 만들어서 획기적인
-              개발자가 되기 <br></br>위해 노력하고 있습니다.
+              아직도 코딩하는 것이 매우 즐겁고, 배울 때 살아있음을 느끼는 행복한
+              개발자입니다.<br></br>
+              지금보다 더 성장할 수 있도록 다양한 것들을 접하며 배우고 있습니다.
+              <br></br>
+              매일 조금씩이라도 꾸준히 발전하는 제 자신을 만들어서 실력있는
+              개발자가 되기 위해 노력하고 있습니다.
             </P_Tag>
           </Grid_Each_Box>
           <Grid_Each_Box>
@@ -65,10 +66,10 @@ function Profile() {
               Frontend
             </Directional_Each_Title>
             <P_Tag>
-              저는 주로 React를 사용하여 프론트엔드 개발을 하고 있습니다.
-              프론트엔드 개발자로써, 백엔드에 대한 이해가 필요하다고 생각하여
-              GraphQL, NestJS, Apollo, Jest, PostgreSQL, Prisma를 조금씩
-              공부하였고, 현재는 TypeScript를 공부하고 있습니다.
+              저는 주로 React Native를 사용하여 프론트엔드 앱 개발을 하고
+              있습니다. 프론트엔드 개발자로써, 백엔드에 대한 이해가 필요하다고
+              생각하여 GraphQL, NestJS, Apollo, Jest, PostgreSQL, Prisma를
+              조금씩 공부하였고, 현재는 TypeScript를 공부하고 있습니다.
             </P_Tag>
           </Grid_Each_Box>
           <Grid_Each_Box>
