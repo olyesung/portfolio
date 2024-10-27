@@ -30,6 +30,20 @@ export const Intro_Grid_Template = styled.div`
 
 export const Grid_Each_Box = styled.div``;
 
+export const Skill_Box = styled.div`
+  width: 140px;
+`;
+
+export const Skill_Percentage_Box = styled.div`
+  width: 250px;
+  margin-right: 14px;
+`;
+
+export const Skill_Percentage_Text = styled.text`
+  padding-top: 2px;
+  font-size: 14px;
+`;
+
 export const Intro_Box = styled.div`
   display: grid;
   grid-template-rows: repeat(5, 1fr);
@@ -58,6 +72,8 @@ export const Directional_Each_Title = styled.div`
   font-size: 20px;
   margin-bottom: 10px;
   display: flex;
+  flex-direction: row;
+  align-items: center;
 `;
 
 export const P_Tag = styled.p`
@@ -83,4 +99,15 @@ export const Deco_Cercle = styled.div`
   border-radius: 12px;
   background-color: #345e94;
   margin-right: 10px;
+`;
+
+export const DetailDongjoo = styled.div`
+  position: absolute;
+  right: 3vw;
+  top: 215vh;
+`;
+
+export const DetailDongjooButton = styled.button`
+  background-color: transparent;
+  border: none;
 `;

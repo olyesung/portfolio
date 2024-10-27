@@ -23,15 +23,11 @@ function Profile() {
         <Intro_Grid_Template>
           <Grid_Each_Box>
             <P_Tag>
-              안녕하십니까. 코딩하는 것이 매우 즐겁고, 배울 때 살아있음을
-              느끼며, 풀리지 않던 것을 해결할 때 희열을 느끼는 개발 경력 2년
-              차가 되어가는 주니어 개발자입니다.
-              <br></br>
-              지금보다 더 나은 코드를 작성할 수 있도록 다양한 것들을 접하며,
-              배우고 있습니다.
-              <br></br>
-              매일 조금씩이라도 꾸준히 성장하여 실력있는 개발자가 되기 위해 늘
-              노력하고 있습니다.
+              안녕하십니까. 스타트업에서 2년 동안 앱 개발을 혼자 도맡아
+              했습니다. 이후 1년 동안 개인 서비스도 만들었습니다. 앱 개발, API
+              개발, 웹 개발 후 배포까지 경험했기 때문에 생태계를 깊이 알고
+              있습니다. 코드도 중요하지만 항상 사용자 입장을 생각하는 개발자가
+              되고 싶습니다.
             </P_Tag>
           </Grid_Each_Box>
           <Grid_Each_Box>
@@ -40,7 +36,7 @@ function Profile() {
                 <Highlight_Color>Name</Highlight_Color> 이예성 (Yeseong, Lee)
               </div>
               <div>
-                <Highlight_Color>Age</Highlight_Color> 32
+                <Highlight_Color>Age</Highlight_Color> 34
               </div>
               <div>
                 <Highlight_Color>Address</Highlight_Color> Gangdonggu, Seoul
@@ -67,10 +63,10 @@ function Profile() {
               Frontend
             </Directional_Each_Title>
             <P_Tag>
-              저는 주로 React Native를 사용하여 프론트엔드 앱 개발을 하고
-              있습니다. 프론트엔드 개발자로써, 백엔드에 대한 이해가 필요하다고
-              생각하여 GraphQL, NestJS, Apollo, Jest, PostgreSQL, Prisma를
-              조금씩 공부하였고, 현재는 TypeScript를 공부하고 있습니다.
+              저는 주로 React-Native, TypeScript를 사용하여 앱 개발을 하고
+              있습니다. React-Native는 크로스플랫폼으로 Android와 iOS 앱을
+              동시에 개발할 수 있기 때문에 더욱 높은 생산성을 가진 것이
+              장점입니다.
             </P_Tag>
           </Grid_Each_Box>
           <Grid_Each_Box>

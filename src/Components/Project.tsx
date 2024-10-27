@@ -3,6 +3,7 @@ import backImage from "../assets/backImage.jpg";
 import toDoListImage from "../assets/todolist.jpg";
 import nFlix from "../assets/nFlix.jpg";
 import wetube from "../assets/wetube.jpg";
+import spinnoff from "../assets/spinnoff.png";
 import playground from "../assets/playground.jpg";
 
 const Container = styled.div`
@@ -55,6 +56,10 @@ const Image = styled.div`
     background-image: url(${toDoListImage});
     border-radius: 13px;
     width: 50%;
+  }
+  &#spinnoff {
+    background-image: url(${spinnoff});
+    background-position: center;
   }
   &#n_flix {
     background-image: url(${nFlix});
@@ -116,6 +121,38 @@ function Project() {
         My <Highlight_Color>Project</Highlight_Color>
       </My_Project>
       <Grid_Template>
+        <Grid_Each_Box>
+          <Image_box>
+            <Image id="spinnoff" />
+          </Image_box>
+          <Project_Info_Box>
+            <Project_Title>스피노프</Project_Title>
+            <Span>사용 언어: ReactJS, TypeScript</Span>
+            <Span>
+              주요 기능: 웹툰 뷰어, 게시판, 팔로잉/팔로워, 본인인증, 인앱결제 등
+            </Span>
+            <Span>참여도: 100%</Span>
+            <Buttons>
+              <LinkButton
+                as="a"
+                href="https://play.google.com/store/apps/details?id=com.dongjoo.spinnoff"
+                target={"_blank"}
+                rel={"noopener noreferrer"}
+              >
+                Android
+              </LinkButton>
+              <LinkButton
+                as="a"
+                href="https://apps.apple.com/pl/app/%EC%8A%A4%ED%94%BC%EB%85%B8%ED%94%84/id6444019564"
+                target={"_blank"}
+                rel={"noopener noreferrer"}
+              >
+                Ios
+              </LinkButton>
+            </Buttons>
+          </Project_Info_Box>
+        </Grid_Each_Box>
+
         <Grid_Each_Box>
           <Image_box>
             <Image id="n_flix" />
