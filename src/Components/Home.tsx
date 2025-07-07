@@ -2,7 +2,7 @@ import { faChevronCircleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
-import backImage from "../assets/backImage.jpg";
+import backImage from "../assets/images/backImage.jpg";
 
 const Container = styled.div`
   width: 100%;

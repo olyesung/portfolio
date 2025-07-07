@@ -13,13 +13,13 @@ const Container = styled.div`
   color: white;
 `;
 
-const Contact_Me = styled.div`
+const ContactMe = styled.div`
   font-size: 35px;
   font-weight: 700;
   margin: 7vh;
 `;
 
-const Grid_Template = styled.div`
+const GridTemplate = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -102,11 +102,11 @@ function Contact() {
   return (
     <Container>
       <Column>
-        <Contact_Me>Contact</Contact_Me>
+        <ContactMe>Contact</ContactMe>
       </Column>
       <Column>
         <form ref={form} onSubmit={sendEmail}>
-          <Grid_Template>
+          <GridTemplate>
             <Input
               placeholder="Name"
               minLength={2}
@@ -121,7 +121,7 @@ function Contact() {
               type="email"
               name="from_name"
             ></Input>
-          </Grid_Template>
+          </GridTemplate>
           <Textarea
             as={"textarea"}
             placeholder="Enter your message"

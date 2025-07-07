@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import backImage from "../assets/backImage.jpg";
-import toDoListImage from "../assets/todolist.jpg";
-import nFlix from "../assets/nFlix.jpg";
-import wetube from "../assets/wetube.jpg";
-import spinnoff from "../assets/spinnoff.png";
-import playground from "../assets/playground.jpg";
+import backImage from "../assets/images/backImage.jpg";
+import toDoListImage from "../assets/images/todolist.jpg";
+import nFlix from "../assets/images/nFlix.jpg";
+import wetube from "../assets/images/wetube.jpg";
+import spinnoff from "../assets/images/spinnoff.png";
+import playground from "../assets/images/playground.jpg";
 
 const Container = styled.div`
   width: 100%;
@@ -16,30 +16,30 @@ const Container = styled.div`
   color: #324b4c;
 `;
 
-const My_Project = styled.div`
+const MyProject = styled.div`
   font-size: 28px;
   font-weight: 700;
 `;
 
-const Highlight_Color = styled.span`
+const HighlightColor = styled.span`
   font-weight: 800;
   color: #345e94;
 `;
 
-const Grid_Template = styled.div`
+const GridTemplate = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
   margin-top: 5vh;
 `;
 
-const Grid_Each_Box = styled.div`
+const GridEachBox = styled.div`
   border: 1px solid #345e94;
   height: 25vh;
   display: flex;
 `;
 
-const Image_box = styled.div`
+const Imagebox = styled.div`
   width: 60%;
   background-color: #d1bfcd;
   display: flex;
@@ -75,13 +75,13 @@ const Image = styled.div`
   }
 `;
 
-const Project_Info_Box = styled.div`
+const ProjectInfoBox = styled.div`
   padding: 2vh 2vw;
   width: 60%;
   position: relative;
 `;
 
-const Project_Title = styled.div`
+const ProjectTitle = styled.div`
   font-weight: 800;
   text-decoration: underline;
   margin-bottom: 10px;
@@ -117,16 +117,16 @@ const LinkButton = styled.div`
 function Project() {
   return (
     <Container>
-      <My_Project>
-        My <Highlight_Color>Project</Highlight_Color>
-      </My_Project>
-      <Grid_Template>
-        <Grid_Each_Box>
-          <Image_box>
+      <MyProject>
+        My <HighlightColor>Project</HighlightColor>
+      </MyProject>
+      <GridTemplate>
+        <GridEachBox>
+          <Imagebox>
             <Image id="spinnoff" />
-          </Image_box>
-          <Project_Info_Box>
-            <Project_Title>스피노프</Project_Title>
+          </Imagebox>
+          <ProjectInfoBox>
+            <ProjectTitle>스피노프</ProjectTitle>
             <Span>사용 언어: ReactJS, TypeScript</Span>
             <Span>
               주요 기능: 웹툰 뷰어, 게시판, 팔로잉/팔로워, 본인인증, 인앱결제 등
@@ -150,15 +150,15 @@ function Project() {
                 Ios
               </LinkButton>
             </Buttons>
-          </Project_Info_Box>
-        </Grid_Each_Box>
+          </ProjectInfoBox>
+        </GridEachBox>
 
-        <Grid_Each_Box>
-          <Image_box>
+        <GridEachBox>
+          <Imagebox>
             <Image id="n_flix" />
-          </Image_box>
-          <Project_Info_Box>
-            <Project_Title>Netflix Clone</Project_Title>
+          </Imagebox>
+          <ProjectInfoBox>
+            <ProjectTitle>Netflix Clone</ProjectTitle>
             <Span>사용 언어: ReactJS, TypeScript</Span>
             <Span>
               주요 기능: 이미지 슬라이드, Open API를 이용한 데이터 출력
@@ -182,15 +182,15 @@ function Project() {
                 Github
               </LinkButton>
             </Buttons>
-          </Project_Info_Box>
-        </Grid_Each_Box>
+          </ProjectInfoBox>
+        </GridEachBox>
 
-        <Grid_Each_Box>
-          <Image_box>
+        <GridEachBox>
+          <Imagebox>
             <Image id="to_do_list" />
-          </Image_box>
-          <Project_Info_Box>
-            <Project_Title>To do list</Project_Title>
+          </Imagebox>
+          <ProjectInfoBox>
+            <ProjectTitle>To do list</ProjectTitle>
             <Span>사용 언어: ReactNative</Span>
             <Span>주요 기능: CRUD</Span>
             <Span>참여도: 100%</Span>
@@ -204,15 +204,15 @@ function Project() {
                 Github
               </LinkButton>
             </Buttons>
-          </Project_Info_Box>
-        </Grid_Each_Box>
+          </ProjectInfoBox>
+        </GridEachBox>
 
-        <Grid_Each_Box>
-          <Image_box>
+        <GridEachBox>
+          <Imagebox>
             <Image id="wetube" />
-          </Image_box>
-          <Project_Info_Box>
-            <Project_Title>Youtube Clone</Project_Title>
+          </Imagebox>
+          <ProjectInfoBox>
+            <ProjectTitle>Youtube Clone</ProjectTitle>
             <Span>사용 언어: NodeJS, Pug, SCSS, MongoDB</Span>
             <Span>주요 기능: 회원가입 및 로그인 구현</Span>
             <Span>참여도: 100%</Span>
@@ -234,15 +234,15 @@ function Project() {
                 Github
               </LinkButton>
             </Buttons>
-          </Project_Info_Box>
-        </Grid_Each_Box>
+          </ProjectInfoBox>
+        </GridEachBox>
 
-        <Grid_Each_Box>
-          <Image_box>
+        <GridEachBox>
+          <Imagebox>
             <Image id="playground" />
-          </Image_box>
-          <Project_Info_Box>
-            <Project_Title>Insta Clone / Backend ver.</Project_Title>
+          </Imagebox>
+          <ProjectInfoBox>
+            <ProjectTitle>Insta Clone / Backend ver.</ProjectTitle>
             <Span>사용 언어: NodeJS, Apollo, GraphQL, Prisma</Span>
             <Span>주요 기능: 백엔드 구현</Span>
             <Span>참여도: 100%</Span>
@@ -264,9 +264,9 @@ function Project() {
                 Github
               </LinkButton>
             </Buttons>
-          </Project_Info_Box>
-        </Grid_Each_Box>
-      </Grid_Template>
+          </ProjectInfoBox>
+        </GridEachBox>
+      </GridTemplate>
     </Container>
   );
 }
